@@ -1,0 +1,25 @@
+//
+//  Localizable.strings
+//  ITindr
+//
+//  Created by Ирина Новикова on 26.02.2026.
+//
+
+start.title = "You'll find someone\nwho will review your code";
+start.registration = "Sign up";
+start.login = "Sign In";
+
+registration.title = "Registration";
+registration.skip = "Next";
+
+login.title = "Log in";
+login.skip = "Next";
+
+aboutMyself.title = "About Myself";
+aboutMyself.skip = "Next";
+
+tabBar.flow = "Flow";
+tabBar.people = "People";
+tabBar.chats = "Chats";
+tabBar.profile = "Profile";
+
