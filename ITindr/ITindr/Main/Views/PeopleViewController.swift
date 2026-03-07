@@ -4,6 +4,6 @@ class PeopleViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .gray
+        view.backgroundColor = .yellow
     }
 }

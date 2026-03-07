@@ -5,3 +5,20 @@
 //  Created by Ирина Новикова on 26.02.2026.
 //
 
+start.title = "Ты найдёшь того,\nкто поревьюит твой код";
+start.registration = "Зарегистрироваться";
+start.login = "Войти";
+
+registration.title = "Регистрация";
+registration.skip = "Далее";
+
+login.title = "Вход";
+login.skip = "Далее";
+
+aboutMyself.title = "О себе";
+aboutMyself.skip = "Далее";
+
+tabBar.flow = "Поток";
+tabBar.people = "Люди";
+tabBar.chats = "Чаты";
+tabBar.profile = "Профиль";

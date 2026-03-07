@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,17 +16,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="rk8-fn-7Lf">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="S3P-vd-xwt">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="rk8-fn-7Lf" secondAttribute="bottom" id="RWj-jh-Qs1"/>
-                            <constraint firstItem="rk8-fn-7Lf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UQl-NG-WjR"/>
-                            <constraint firstItem="rk8-fn-7Lf" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="e5F-OL-OAc"/>
-                            <constraint firstItem="rk8-fn-7Lf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lWe-gU-IG9"/>
+                            <constraint firstAttribute="bottom" secondItem="S3P-vd-xwt" secondAttribute="bottom" id="0hB-dz-xCq"/>
+                            <constraint firstItem="S3P-vd-xwt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZzZ-3j-KHy"/>
+                            <constraint firstItem="S3P-vd-xwt" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="mb9-zv-b0q"/>
+                            <constraint firstItem="S3P-vd-xwt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zHR-67-xW2"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -35,6 +36,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchScreen" width="393" height="852"/>
+        <image name="launchScreen" width="393" height="852"/>
     </resources>
 </document>
