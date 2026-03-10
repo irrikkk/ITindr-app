@@ -25,6 +25,12 @@ final class CustomButton: UIControl {
         }
     }
 
+    override var isEnabled: Bool {
+        didSet {
+            updateEnabledState()
+        }
+    }
+
     init (style: CustomButtonStyle) {
         self.style = style
         super.init(frame: .zero)
@@ -65,6 +71,26 @@ final class CustomButton: UIControl {
         UIView.animate(withDuration: 0.15) {
             self.alpha = self.isHighlighted ? 0.7 : 1.0
             self.transform = self.isHighlighted ? CGAffineTransform(scaleX: 0.97, y: 0.97) : .identity
+        }
+    }
+
+    private func updateEnabledState() {
+        UIView.animate(withDuration: 0.15) {
+            if self.isEnabled {
+                self.updateStyle()
+                self.label.alpha = 1.0
+
+            } else {
+                switch self.style {
+                case .primary:
+                    self.backgroundColor = UIColor.white.withAlphaComponent(0.5)
+                    self.label.alpha = 0.5
+                case .secondary:
+                    self.backgroundColor = UIColor.white.withAlphaComponent(0.1)
+                    self.label.alpha = 0.5
+
+                }
+            }
         }
     }
 }
