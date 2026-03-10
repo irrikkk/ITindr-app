@@ -10,10 +10,18 @@ start.registration = "Sign up";
 start.login = "Sign In";
 
 registration.title = "Registration";
-registration.skip = "Next";
+registration.primaryButton = "Register";
+registration.secondaryButton = "Back";
+registration.password = "Password";
+registration.repeatPassword = "Repeat password";
+registration.password.hint.title = "Help";
+registration.password.hint.message = "The password must contain numbers and letters";
+registration.alert.button = "Ok";
 
-login.title = "Log in";
-login.skip = "Next";
+login.title = "Login";
+login.primaryButton = "Sign In";
+login.secondaryButton = "Back";
+login.password = "Password";
 
 aboutMyself.title = "About Myself";
 aboutMyself.skip = "Next";
