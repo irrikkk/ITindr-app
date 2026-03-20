@@ -42,16 +42,18 @@ class StartViewController: UIViewController {
 
     private func setupUI() {
         backgroundImageView.image = UIImage(named: "start_screen")
+        backgroundImageView.accessibilityIdentifier = "backgroundImageView"
         backgroundImageView.contentMode = .scaleAspectFill
         backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
         addParallaxEffect(to: backgroundImageView, motion: parallaxMotion)
 
         logoImageView.image = UIImage(named: "logo_app")
+        logoImageView.accessibilityIdentifier = "logoImageView"
         logoImageView.contentMode = .scaleAspectFit
         logoImageView.translatesAutoresizingMaskIntoConstraints = false
 
         logoLabel.text = "start.title".localized
-
+        logoLabel.accessibilityIdentifier = "logoLabel"
         logoLabel.font = UIFont(name: "Inter24pt-Bold", size: 16)
         logoLabel.textColor = .white
         logoLabel.numberOfLines = 2
@@ -59,10 +61,12 @@ class StartViewController: UIViewController {
         logoLabel.translatesAutoresizingMaskIntoConstraints = false
 
         registrationButton.label.text = "start.registration".localized
+        registrationButton.accessibilityIdentifier = "registrationButton"
         registrationButton.addTarget(self, action: #selector(registrationButtonTapped), for: .touchUpInside)
         registrationButton.translatesAutoresizingMaskIntoConstraints = false
 
         loginButton.label.text = "start.login".localized
+        loginButton.accessibilityIdentifier = "loginButton"
         loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
         loginButton.translatesAutoresizingMaskIntoConstraints = false
 }

@@ -10,10 +10,18 @@ start.registration = "Зарегистрироваться";
 start.login = "Войти";
 
 registration.title = "Регистрация";
-registration.skip = "Далее";
+registration.primaryButton = "Зарегистрироваться";
+registration.secondaryButton = "Назад";
+registration.password = "Пароль";
+registration.repeatPassword = "Повторите пароль";
+registration.password.hint.title = "Подсказка";
+registration.password.hint.message = "Пароль должен содержать цифры и буквы";
+registration.alert.button = "Ок";
 
 login.title = "Вход";
-login.skip = "Далее";
+login.primaryButton = "Войти";
+login.secondaryButton = "Назад";
+login.password = "Пароль";
 
 aboutMyself.title = "О себе";
 aboutMyself.skip = "Далее";
