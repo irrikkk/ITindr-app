@@ -16,6 +16,7 @@ class AboutMyselfViewController: UIViewController {
 
     private func setupUI() {
         skipButton.setTitle("aboutMyself.skip".localized, for: .normal)
+        skipButton.accessibilityIdentifier = "skipButton"
         skipButton.setTitleColor(.black, for: .normal)
         skipButton.titleLabel?.font = UIFont(name: "Inter24pt-Bold", size: 16)
         skipButton.tintColor = .white

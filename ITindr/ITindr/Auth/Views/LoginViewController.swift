@@ -31,28 +31,33 @@ class LoginViewController: UIViewController {
         backgroundView.translatesAutoresizingMaskIntoConstraints = false
 
         mainTitleLabel.text = "login.title".localized
+        mainTitleLabel.accessibilityIdentifier = "loginTitle"
         mainTitleLabel.textColor = .white
         mainTitleLabel.font = UIFont(name: "Inter24pt-Bold", size: 40)
         mainTitleLabel.numberOfLines = 0
         mainTitleLabel.translatesAutoresizingMaskIntoConstraints = false
 
         emailTextField.titleLabel.text = "Email"
+        emailTextField.accessibilityIdentifier = "emailTextField"
         emailTextField.setPlaceholder("Ваш email")
         emailTextField.validator = EmailValidator()
         emailTextField.translatesAutoresizingMaskIntoConstraints = false
 
         passwordTextField.titleLabel.text = "login.password".localized
+        passwordTextField.accessibilityIdentifier = "passwordTextField"
         passwordTextField.setPlaceholder("Ваш пароль")
         passwordTextField.validator = RequiredFieldValidator()
         passwordTextField.setSecureTextEntry(true)
         passwordTextField.translatesAutoresizingMaskIntoConstraints = false
 
         loginButton.label.text = "login.primaryButton".localized
+        loginButton.accessibilityIdentifier = "loginSubmitButton"
         loginButton.translatesAutoresizingMaskIntoConstraints = false
         loginButton.isEnabled = false
         loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
 
         backButton.label.text = "login.secondaryButton".localized
+        backButton.accessibilityIdentifier = "loginBackButton"
         backButton.translatesAutoresizingMaskIntoConstraints = false
         backButton.addTarget(self, action: #selector(backButtonTapped), for: .touchUpInside)
 

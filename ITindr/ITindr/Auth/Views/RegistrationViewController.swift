@@ -32,17 +32,20 @@ class RegistrationViewController: UIViewController {
         backgroundView.translatesAutoresizingMaskIntoConstraints = false
 
         mainTitleLabel.text = "registration.title".localized
+        mainTitleLabel.accessibilityIdentifier = "registrationTitle"
         mainTitleLabel.textColor = .white
         mainTitleLabel.font = UIFont(name: "Inter24pt-Bold", size: 40)
         mainTitleLabel.numberOfLines = 0
         mainTitleLabel.translatesAutoresizingMaskIntoConstraints = false
 
         emailTextField.titleLabel.text = "Email"
+        emailTextField.accessibilityIdentifier = "emailTextField"
         emailTextField.setPlaceholder("Ваш email")
         emailTextField.validator = EmailValidator()
         emailTextField.translatesAutoresizingMaskIntoConstraints = false
 
         passwordTextField.titleLabel.text = "registration.password".localized
+        passwordTextField.accessibilityIdentifier = "passwordTextField"
         passwordTextField.setPlaceholder("Придумайте пароль")
         passwordTextField.validator = RequiredFieldValidator()
         passwordTextField.setSecureTextEntry(true)
@@ -50,6 +53,7 @@ class RegistrationViewController: UIViewController {
         passwordTextField.translatesAutoresizingMaskIntoConstraints = false
 
         confirmPasswordTextField.titleLabel.text = "registration.repeatPassword".localized
+        confirmPasswordTextField.accessibilityIdentifier = "confirmPasswordTextField"
         confirmPasswordTextField.setPlaceholder("Повторите пароль")
         confirmPasswordTextField.setSecureTextEntry(true)
         confirmPasswordTextField.validator = PasswordMatchValidator(originalPassword: { [weak self] in
@@ -59,11 +63,13 @@ class RegistrationViewController: UIViewController {
         confirmPasswordTextField.translatesAutoresizingMaskIntoConstraints = false
 
         registerButton.label.text = "registration.primaryButton".localized
+        registerButton.accessibilityIdentifier = "registerSubmitButton"
         registerButton.translatesAutoresizingMaskIntoConstraints = false
         registerButton.isEnabled = false
         registerButton.addTarget(self, action: #selector(registerButtonTapped), for: .touchUpInside)
 
         backButton.label.text = "registration.secondaryButton".localized
+        backButton.accessibilityIdentifier = "registerBackButton"
         backButton.translatesAutoresizingMaskIntoConstraints = false
         backButton.addTarget(self, action: #selector(backButtonTapped), for: .touchUpInside)
 
